@@ -1,4 +1,4 @@
 # Give Web Page
-### GIVE Company web page
+#### GIVE Company web page
 
-* **Developed by** __Mario Vanegas__ **(CTO)**
+* **Developed by** _Mario Vanegas_ **(CTO)**
