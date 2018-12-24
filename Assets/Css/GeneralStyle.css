@@ -1,0 +1,199 @@
+/*GENERAL STYLES*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Simplifica';
+    src: url('../Fonts/SIMPLIFICA/Simplifica.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Simplifica';
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    position: relative;
+    width: 65%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+/*CONTAINERS STYLE*/
+
+.ContainerSection {
+    display: block;
+    width: 100%;
+}
+
+.ContainerSection.Footer, .ContainerSection.MainContainer {
+    position: relative;
+}
+
+.ContainerSection.MainMenu {
+    top: 0;
+    position: fixed;
+    height: 10%;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top right, #c9c9c9, #ebeceb);
+    overflow: hidden;
+    box-shadow: 3px 3px 3px #7c7c7c;
+}
+
+.ContainerSection.MainContainer {
+    margin-top: 4%;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, #c5c5c5, #f5f5f5);
+}
+
+.ContainerSection.Footer {
+    text-align: center;
+    background-color: #cacaca;
+    padding: 10px; 
+}
+
+/*ARTICLES*/
+
+.StandarArticle {
+    margin: 25px;
+}
+
+/*TITLES*/
+
+fieldset {
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    border: 2px solid #7c7c7c;
+}
+
+.TitleText1 {
+    font-size: calc(24px + 1vw);
+}
+
+.TitleText2 {
+    font-size: calc(18px + 1vw);
+}
+
+/*MENUS STYLE*/
+
+.MenuOptions {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: right;
+    padding: 15px 25px;
+    margin: 0px 10px;
+    color: black;
+    text-decoration: none;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.MenuOptions::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.75s, transform 0.75s;
+    transform: translateY(10px);  
+}
+
+.MenuOptions:after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.75s, transform 0.75s;
+    transform: translateY(10px);
+}
+
+.MenuOptions:hover:after, .MenuOptions.Active:after {
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+.MenuOptions:hover::after, .MenuOptions.Active::after {
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+object {
+    position: relative;
+    max-height: 250px;
+    max-width: 350px;
+}
+
+.LogoTipo {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    padding: 15px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.LogoText1, .LogoText2, .TitleText1, .TitleText2 {
+    letter-spacing: 2px;
+    font-style: normal;
+    font-family: 'Simplifica';
+}
+
+.LogoText1 {
+    font-size: calc(14px + 1vw);
+}
+
+.LogoText2 {
+    font-size: calc(8px + 1vw);
+}
+
+/*BUTTONS*/
+
+.StandarButton {
+    background-color: rgba(255, 255, 255, 0);
+    color: #666666;
+    border: 2px solid #7c7c7c;
+    display: block;
+    position: relative;
+    width: 25%;
+    padding: 15px;
+    margin: 25px;
+    -moz-transition: background-color 0.75s, color 0.75s;
+    -webkit-transition: background-color 0.75s, color 0.75s;
+    -o-transition: background-color 0.75s, color 0.75s;
+    transition: background-color 0.75s, color 0.75s;
+}
+
+.StandarButton:hover {
+    background-color: #7c7c7c;
+    color: #fff;
+}
+
+.StandarButton:active {
+    border-color: white;
+}

@@ -1,9 +1,9 @@
 <?php
-	define('BaseUrl','/followInkSystem/');
-	define('Css','/followInkSystem/Assets/Css/');
-	define('Js','/followInkSystem/Assets/Js/');
-	define('Img','/followInkSystem/Assets/Multimedia/');
-	define('Docs', '/followInkSystem/Assets/Docs/');
+	define('BaseUrl','/Give/');
+	define('Css','/Give/Assets/Css/');
+	define('Js','/Give/Assets/Js/');
+	define('Docs', '/Give/Assets/Docs/');
+	define('Media', '/Give/Assets/Media/');
 	
 	//Colocando hora correcta en el servidor
 	date_default_timezone_set('UTC');

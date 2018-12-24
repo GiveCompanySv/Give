@@ -71,7 +71,7 @@
 
             $NotFoundModel = New ErrorModelo();
             $NotFoundView = New ErrorVista();
-            $NotFoundController = New ErrorControlador($NotFoundModel,$NotFoundView);
+            $NotFoundController = New ErrorControlador($NotFoundModel, $NotFoundView);
 
             print $NotFoundController->LoadView();
         }
