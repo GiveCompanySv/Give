@@ -4,12 +4,6 @@
             <span class="LogoText1">
                 &#60;GIVE /&#62;
             </span>
-            
-            <hr style="border: 1px solid black;">
-            
-            <span class="LogoText2">
-                &#60;'Cause giving is the way in you receive /&#62;
-            </span>
         </a>
     </div>
 

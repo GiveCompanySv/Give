@@ -24,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-svg {
+.Svg1 {
     position: relative;
     width: 65%;
     height: 100%;
@@ -73,7 +73,61 @@ svg {
     margin: 25px;
 }
 
+.SubArticleContainer {
+    position: relative;
+    text-align: center;
+}
+
+.SubArticleX {
+    width: 90.5%;
+    display: block;
+    position: relative;
+    padding: 15px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.SubArticle {
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+    text-align: justify;
+}
+
+.SubArticle.a, .SubArticleX.a {
+    background-color: rgba(160, 160, 160, 0.7   );
+}
+
+.SubArticle.b, .SubArticleX.b {
+    background-color: rgba(175, 175, 175, 0.7   );
+}
+
 /*TITLES*/
+
+.LogoTipo {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    padding: 15px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.LogoText1, .LogoText2, .TitleText1, .TitleText2 {
+    letter-spacing: 2px;
+    font-style: normal;
+    font-family: 'Simplifica';
+}
+
+.LogoText1 {
+    font-size: calc(14px + 1vw);
+}
+
+.LogoText2 {
+    font-size: calc(8px + 1vw);
+}
 
 fieldset {
     text-align: center;
@@ -142,36 +196,6 @@ fieldset {
     transform: translateY(5px);
 }
 
-object {
-    position: relative;
-    max-height: 250px;
-    max-width: 350px;
-}
-
-.LogoTipo {
-    top: 50%;
-    position: relative;
-    transform: translateY(-50%);
-    padding: 15px;
-    display: inline-block;
-    float: left;
-    text-align: center;
-}
-
-.LogoText1, .LogoText2, .TitleText1, .TitleText2 {
-    letter-spacing: 2px;
-    font-style: normal;
-    font-family: 'Simplifica';
-}
-
-.LogoText1 {
-    font-size: calc(14px + 1vw);
-}
-
-.LogoText2 {
-    font-size: calc(8px + 1vw);
-}
-
 /*BUTTONS*/
 
 .StandarButton {
@@ -196,4 +220,35 @@ object {
 
 .StandarButton:active {
     border-color: white;
+}
+
+.InfoButtonY, .InfoButtonX {
+    background-color: rgba(255, 255, 255, 0);
+    color: #3c3c3c;
+    border: 2px solid #3c3c3c;
+    position: relative;
+    margin: 25px;
+    padding: 15px;
+    display: block;
+    -moz-transition: background-color 0.75s, color 0.75s;
+    -webkit-transition: background-color 0.75s, color 0.75s;
+    -o-transition: background-color 0.75s, color 0.75s;
+    transition: background-color 0.75s, color 0.75s;
+}
+
+.InfoButtonY:hover, .InfoButtonX:hover {
+    background-color: #3c3c3c;
+    color: #fff;
+}
+
+.InfoButtonY:active, .InfoButtonX:active {
+    border-color: white;
+}
+
+.InfoButtonY {
+    width: 65%;
+}
+
+.InfoButtonX {
+    width: 25%;
 }
