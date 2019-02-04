@@ -18,3 +18,9 @@ function showSlides() {
     //Change image every 2 seconds
     setTimeout(showSlides, 5000);
 }
+
+function PruebaHeight(id) {
+    $('#Prueba').height($('#Prueba').height());
+    $('#Prueba2').height($('#Prueba').height());
+    $('#Prueba3').height($('#Prueba').height());
+}
